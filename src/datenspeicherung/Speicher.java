@@ -1,4 +1,4 @@
-package speicher;
+package datenspeicherung;
 
 import fachkonzept.Vokabel;
 
