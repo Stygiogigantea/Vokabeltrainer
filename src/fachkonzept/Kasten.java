@@ -57,7 +57,7 @@ public class Kasten {
 
     private void setzeZurueckGekonnt(){
         for(int i = 0; i< vokabeln.size(); i++)
-            vokabeln.get(i).setzeGekonnt(true);
+            vokabeln.get(i).setzeGekonnt(false);
     }
 
     public void speichereVokabeln(String dateiname){
