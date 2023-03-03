@@ -73,4 +73,31 @@ public class Speicher {
     public schreibeVokabeln(String dateiname, ArrayList<Vokabel> vokabeln){
         //TODO
     }
+	
+    private void oeffneDatenbank() throws Exception
+    {
+    	try {
+    		con=DriverManager.getConnection("jdbc:ucanaccess://C://Users//Janhm//OneDrive//Dokumente//12 Klasse//IT SW//Eclipse_DBs//VokabeltrainerDB.accdb")
+    	}
+    	catch (SQLException e)
+    	{
+    		throw new Exception("Fehler beim oeffnen der Datenbank!");
+    	}
+    }
+
+	private void schliesseDatenbank() throws Exception
+    {
+    	try {
+    		if(rs!=null)
+    		{
+    			rs.close();
+    		}
+    		stmt.close();
+    		con.close();
+    	}
+    	catch(SQLException e)
+    	{
+    		throw new Exception("Fehler beim Schliessen der Datenbank!")
+    	}
+    }
 }
