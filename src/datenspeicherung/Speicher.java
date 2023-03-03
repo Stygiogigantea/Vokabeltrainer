@@ -35,7 +35,7 @@ public class Speicher {
 		catch (SQLException e)
 		{
 			throw new Exception(
-					"Fehler beim Lesen der Vokabeln! (Speicher: Z.48)");
+					"Fehler beim Lesen der Vokabeln! (Speicher: Z.38)");
 		}
 
 		schliesseDatenbank();
@@ -63,7 +63,7 @@ public class Speicher {
 		catch (SQLException e)
 		{
 			throw new Exception(
-					"Fehler beim Lesen der kastenNr! (Speicher: Z.75)");
+					"Fehler beim Lesen der kastenNr! (Speicher: Z.66)");
 		}
 
 		schliesseDatenbank();
