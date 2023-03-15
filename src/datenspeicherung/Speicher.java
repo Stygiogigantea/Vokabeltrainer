@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+
 import fachkonzept.Vokabel;
 
 public class Speicher {
@@ -42,7 +43,7 @@ public class Speicher {
 		return ergebnis;
 
 	}
-
+	
 	private int getKastenNr(String dateiname) throws Exception
 	{
 		oeffneDatenbank();
@@ -70,11 +71,14 @@ public class Speicher {
 		return erg;
 	}
 
-    public schreibeVokabeln(String dateiname, ArrayList<Vokabel> vokabeln){
-        //TODO
-    }
-	
-    private void oeffneDatenbank() throws Exception
+	public void schreibeVokabeln(String dateiname, ArrayList<Vokabel> vokabeln) throws Exception
+	{
+		oeffneDatenbank();
+		String sqlStmt = "INSERT INTO vokabel (term, verkaufspreis, lagerbestand) ";
+		//TODO
+	}
+
+	private void oeffneDatenbank() throws Exception
     {
     	try {
     		con=DriverManager.getConnection("jdbc:ucanaccess://C://Users//Janhm//OneDrive//Dokumente//12 Klasse//IT SW//Eclipse_DBs//VokabeltrainerDB.accdb")
@@ -97,7 +101,7 @@ public class Speicher {
     	}
     	catch(SQLException e)
     	{
-    		throw new Exception("Fehler beim Schliessen der Datenbank!")
+    		throw new Exception("Fehler beim Schliessen der Datenbank!");
     	}
     }
 }
