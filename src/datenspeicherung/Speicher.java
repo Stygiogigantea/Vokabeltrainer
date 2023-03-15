@@ -9,11 +9,12 @@ import java.util.ArrayList;
 
 import fachkonzept.Vokabel;
 
-public class Speicher {
-    
-	private Connection con; // Data base connection
-	private PreparedStatement stmt; // SQL querry statement
-	private ResultSet rs; // resultat der ausgeführten querry
+public class Speicher
+{
+	private Connection con;
+	private PreparedStatement stmt;
+	private ResultSet rs;
+	private String accdbLocation  = "jdbc:ucanaccess://C://Users//Janhm//OneDrive//Dokumente//12 Klasse//IT SW//Eclipse_DBs//VokabeltrainerDB.accdb";
 
 	public ArrayList<Vokabel> liesVokabeln(String dateiname) throws Exception
 	{
@@ -81,7 +82,7 @@ public class Speicher {
 	private void oeffneDatenbank() throws Exception
     {
     	try {
-    		con=DriverManager.getConnection("jdbc:ucanaccess://C://Users//Janhm//OneDrive//Dokumente//12 Klasse//IT SW//Eclipse_DBs//VokabeltrainerDB.accdb")
+    		con=DriverManager.getConnection(accdbLocation);
     	}
     	catch (SQLException e)
     	{
