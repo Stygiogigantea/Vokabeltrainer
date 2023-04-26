@@ -12,7 +12,7 @@ public class SteurungLernen {
     public void geklicktGebenAufgabe(){
         derKasten.gibNaechsteVokabel();
     }
-    public void geklicktLaden(String dateiname){
+    public void geklicktLaden(String dateiname) throws Exception{
         derKasten.ladeVokabeln(dateiname);
     }
     public void geklicktPruefenVermutung(String vermutung){
