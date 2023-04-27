@@ -9,7 +9,7 @@ public class SteurungLernen {
         derKasten = new Kasten();
     }
 
-    public void geklicktGebenAufgabe(){
+    public void geklicktGebenAufgabe() throws Exception{
         derKasten.gibNaechsteVokabel();
     }
     public void geklicktLaden(String dateiname) throws Exception{
