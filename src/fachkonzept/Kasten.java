@@ -15,6 +15,7 @@ public class Kasten
 
 	public void aendereVokabel(int vokabelNr, String aufgabe, String ergebnis)
 	{
+		
 		for (int i = 0; i < vokabeln.size(); i++)
 			if (vokabeln.get(i).liesVokabelNr() == vokabelNr)
 				vokabeln.set(i,
@@ -32,19 +33,23 @@ public class Kasten
 	}
 
 	public void fuegeVokabelHinzu(String aufgabe, String ergebnis)
+			throws Exception
 	{
 		vokabeln.add(
 				new Vokabel(gibNaechsteVokabelNr(), aufgabe, ergebnis, false));
 	}
 
-	public Vokabel gibNaechsteVokabel()
+	public Vokabel gibNaechsteVokabel() throws Exception
 	{
 		return vokabeln.get(gibNaechsteVokabelNr());
 	}
 
-	private int gibNaechsteVokabelNr()
+	private int gibNaechsteVokabelNr() throws Exception
 	{
-		return vokabeln.size();
+		if (vokabeln != null)
+			return vokabeln.size();
+		else
+			throw new Exception("Error: Vokabeln nicht geladen!");
 	}
 
 	public void ladeVokabeln(String dateiname)
@@ -56,7 +61,6 @@ public class Kasten
 		catch (Exception e)
 		{
 			System.out.println(e.getLocalizedMessage());
-			// TODO update code
 		}
 	}
 
