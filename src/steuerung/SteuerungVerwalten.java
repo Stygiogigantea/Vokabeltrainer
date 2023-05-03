@@ -10,6 +10,7 @@ public class SteuerungVerwalten
 	public SteuerungVerwalten()
 	{
 		derKasten = new Kasten();
+		//TODO update
 	}
 
 	public void geklicktAendern(int vokabelNr, String aufgabe, String ergebnis)
