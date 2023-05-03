@@ -22,6 +22,8 @@ import javax.management.StringValueExp;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 
 @SuppressWarnings("serial")
 public class VerwaltenBenutzerschnittstellte extends JFrame
@@ -39,8 +41,9 @@ public class VerwaltenBenutzerschnittstellte extends JFrame
 
 	// XXX launch
 
-	public static void main(String[] args)
+	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedLookAndFeelException
 	{
+		UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		EventQueue.invokeLater(new Runnable()
 		{
 			public void run()
@@ -169,7 +172,6 @@ public class VerwaltenBenutzerschnittstellte extends JFrame
 
 		// setup TextField "VokabelNr"
 		txtVokabelNr = new JTextField();
-		txtVokabelNr.setEditable(false);
 		txtVokabelNr.setBounds(10, 298, 86, 20);
 		contentPane.add(txtVokabelNr);
 		txtVokabelNr.setColumns(10);
