@@ -166,7 +166,7 @@ public class VerwaltenBenutzerschnittstellte extends JFrame
 
 		// setup TextField "Dateiname"
 		txtDateiname = new JTextField();
-		txtDateiname.setBounds(68, 8, 99, 20);
+		txtDateiname.setBounds(73, 8, 99, 20);
 		contentPane.add(txtDateiname);
 		txtDateiname.setColumns(10);
 
@@ -260,19 +260,19 @@ public class VerwaltenBenutzerschnittstellte extends JFrame
 		contentPane.add(lblDateiname);
 
 		JLabel lblVokabelNr = new JLabel("VokabelNr");
-		lblVokabelNr.setBounds(10, 283, 89, 14);
+		lblVokabelNr.setBounds(10, 283, 99, 14);
 		contentPane.add(lblVokabelNr);
 
 		JLabel lblAufgabe = new JLabel("Aufgabe");
-		lblAufgabe.setBounds(109, 283, 46, 14);
+		lblAufgabe.setBounds(109, 283, 89, 14);
 		contentPane.add(lblAufgabe);
 
 		JLabel lblErgebnis = new JLabel("Ergebnis");
-		lblErgebnis.setBounds(208, 283, 46, 14);
+		lblErgebnis.setBounds(208, 283, 86, 14);
 		contentPane.add(lblErgebnis);
 
 		JLabel lblGekonnt = new JLabel("Gekonnt");
-		lblGekonnt.setBounds(307, 283, 46, 14);
+		lblGekonnt.setBounds(307, 283, 89, 14);
 		contentPane.add(lblGekonnt);
 	}
 }
