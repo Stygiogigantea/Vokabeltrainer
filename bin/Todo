@@ -1,0 +1,21 @@
+TODO:
+	C  R  U  D
+	r  e  p  e
+	e  a  d  l
+	a  d  a  e
+	t     t  t
+	e     e  e
+	
+	- Speicher  Marko + Franz
+	-> öffnen()
+	-> leseVokabeln()
+	
+	- Tests Franz
+	-> ladeDB()
+	-> schreibDB
+	 
+	- UI_Lernen Jan (+ Fanrz)
+	-> eingabe + check 
+	-> speichern wenn schliessen
+	
+	- UI transitions Franz
