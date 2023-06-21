@@ -10,7 +10,6 @@ public class SteuerungVerwalten
 	public SteuerungVerwalten()
 	{
 		derKasten = new Kasten();
-		//TODO update
 	}
 
 	public void geklicktAendern(int vokabelNr, String aufgabe, String ergebnis)
@@ -19,7 +18,6 @@ public class SteuerungVerwalten
 	}
 
 	public void geklicktHinzufuegen(String aufgabe, String ergebnis)
-			throws Exception
 	{
 		derKasten.fuegeVokabelHinzu(aufgabe, ergebnis);
 	}

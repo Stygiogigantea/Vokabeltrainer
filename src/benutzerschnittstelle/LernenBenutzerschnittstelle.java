@@ -54,7 +54,11 @@ public class LernenBenutzerschnittstelle extends JFrame
 	public LernenBenutzerschnittstelle()
 	{
 		JFrame lernGUI = new JFrame();
+<<<<<<< HEAD
 		final SteuerungLernen dieSteuerungLernen = new SteuerungLernen();
+=======
+		SteuerungLernen dieSteuerungLernen = new SteuerungLernen();
+>>>>>>> 4f125b29ef88922f6b7e71c121c17b69637a1887
 		lernGUI.addKeyListener(new KeyListener()
 		{
 			
@@ -75,7 +79,11 @@ public class LernenBenutzerschnittstelle extends JFrame
 			@Override
 			public void keyPressed(KeyEvent e)
 			{
+<<<<<<< HEAD
 				if(e.getKeyCode() == KeyEvent.VK_ENTER) //Enter taste zur Abgabe nutzen
+=======
+				if(e.getKeyCode() == KeyEvent.VK_ENTER)
+>>>>>>> 4f125b29ef88922f6b7e71c121c17b69637a1887
 				{
 					//TODO
 					dieSteuerungLernen.geklicktPruefenVermutung(textDefinitionEingabe.getText()); // Text aus Definitionsfeld lesen und pruefen
@@ -110,4 +118,3 @@ public class LernenBenutzerschnittstelle extends JFrame
 		contentPane.add(textDefinitionEingabe);
 		textDefinitionEingabe.setColumns(10);
 	}
-}
